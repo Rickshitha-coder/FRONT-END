@@ -1,0 +1,39 @@
+body{
+padding:10px;
+}
+nav{
+text-align:center;
+background-color:grey;
+padding:18px;
+font-weight:bold;
+}
+nav a{
+color:white;
+text-decoration:none;
+}
+nav a:hover{
+color:orange;
+text-decoration:underline;
+}
+h1{
+border:1px solid black;
+box-shadow:0 0 18px rgba(0,0,0,0.8);
+}
+#html{
+padding:5px;
+margin:5px;
+border:1px solid black;
+box-shadow:0 0 18px rgba(0,0,0,0.8);
+}
+#css{
+padding:5px;
+margin:5px;
+border:1px solid black;
+box-shadow:0 0 18px rgba(0,0,0,0.8);
+}
+#js{
+padding:5px;
+margin:5px;
+border:1px solid black;
+box-shadow:0 0 18px rgba(0,0,0,0.8);
+}

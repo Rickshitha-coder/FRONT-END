@@ -1,0 +1,76 @@
+<html>
+<title>Form Registration</title>
+<style>
+header{
+padding:10px;
+text-align:center;
+background-color:yellow;
+}
+form{
+margin:20px auto auto auto;
+padding:20px;
+max-width:500px;
+box-shadow:0 0 10px rgba(0,0,0,0.8);
+border-radius:8px;
+}
+label,input,select{
+padding:10px;
+margin-bottom:18px;
+}
+label{
+font-weight:bold;
+}
+input[type="submit"]{
+background-color:green;
+margin-top:20px;
+color:white;
+cursor:pointer;
+border-radius:8px;
+width:auto;
+}
+</style>
+<body>
+<header>
+<h1>Form Registration</h1>
+<p>Fill the form to register</p>
+</header>
+<form>
+<label for="name">Name</label>
+<input type="text" id="name"  placeholder="enter your name">
+<br>
+<label for="phone">Contact No</label>
+<input type="tel"  name="phone" placeholder="enter your contact number" >
+<br>
+<label for="dob">Date of Birth</label>
+<input type="date" name="dob" id="dob">
+<br>
+<label for="photo">Upload Your photo</label>
+<input type="file" name="photo">
+<br>
+<label for="email">Email</label>
+<input type="email" name="email"  placeholder="enter your email address">
+<br>
+<label for="password">Password</label>
+<input type="password" name="password" id="password" placeholder="enter your password">
+<br>
+<label for="Course">Course</label>
+<select>
+<option value=""></option>
+<option value="Bsc">B.Sc</option>
+<option value="b.com">B.com</option>
+<option value="BBA">BBA</option>
+<option value="BCA">BCA</option>
+<option value="BA">BA</option>
+</select>
+<br>
+<label for="language">Languages</label>
+<input type="radio" name="language">Tamil
+<input type="radio" name="language">English
+<br>
+<label for="msg">Comments</label>
+<textarea name="msg" placeholder="enter your queries"></textarea>
+<br>
+<input type="submit" value="Register">
+</form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Box Model Explained</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        .box {
+            width: 300px;
+            margin: 20px auto;
+            background-color: #ffffff;
+            box-shadow: 0 0 5px gray;
+        }
+
+        .content-box {
+            background-color: #ffffcc;
+        }
+
+        .padding-box {
+            padding: 20px;
+            background-color: #ccf2ff;
+        }
+
+        .border-box {
+            padding: 20px;
+            border: 3px solid green;
+            background-color: #ccffcc;
+        }
+
+        .margin-box {
+            margin: 25px;
+            padding: 20px;
+            border: 3px dashed red;
+            background-color: #ffd9cc;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Box Model</h1>
+
+    <div class="box content-box">
+        <h2>Content Only</h2>
+        <p>This box has only the content area. No padding, no border, and no margin are applied. It appears tight with no extra spacing.</p>
+    </div>
+
+    <div class="box padding-box">
+        <h2>Content + Padding</h2>
+        <p>This box includes padding. Padding adds space inside the box, between the content and the border (if there is one).</p>
+    </div>
+
+    <div class="box border-box">
+        <h2>Content + Padding + Border</h2>
+        <p>This box has a green border around the content and padding. Border visually outlines the box.</p>
+    </div>
+
+    <div class="box margin-box">
+        <h2>Content + Padding + Border + Margin</h2>
+        <p>This final box includes margin as well. Margin is space outside the box, separating it from other elements.</p>
+    </div>
+
+</body>
+</html>

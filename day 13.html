@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Formats Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        div {
+            margin: 15px auto;
+            width: 70%;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            color: white;
+        }
+
+        .named-color {
+            background-color: green;
+        }
+
+        .hex-color {
+            background-color: #ff5733; /* Orange-red */
+        }
+
+        .rgb-color {
+            background-color: rgb(0, 128, 0); /* Green */
+        }
+
+        .rgba-color {
+            background-color: rgba(0, 0, 255, 0.5); /* Transparent blue */
+        }
+
+        .hsl-color {
+            background-color: hsl(120, 100%, 25%); /* Dark Green */
+        }
+
+        .hsla-color {
+            background-color: hsla(300, 100%, 50%, 0.4); /* Transparent Pinkish Purple */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Different CSS Color Formats</h1>
+
+    <div class="named-color">This uses a <strong>named color</strong> (green).</div>
+
+    <div class="hex-color">This uses a <strong>hex code</strong> (#ff5733).</div>
+
+    <div class="rgb-color">This uses <strong>RGB</strong> (rgb(0, 128, 0)).</div>
+
+    <div class="rgba-color">This uses <strong>RGBA</strong> with transparency.</div>
+
+    <div class="hsl-color">This uses <strong>HSL</strong> (hsl(120, 100%, 25%)).</div>
+
+    <div class="hsla-color">This uses <strong>HSLA</strong> with transparency.</div>
+
+</body>
+</html>

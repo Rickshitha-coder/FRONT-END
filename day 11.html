@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Background Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f8ff;
+        }
+
+        .box {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 16px;
+            box-shadow: 0 0 5px gray;
+        }
+
+        .background-color {
+            background-color: #4CAF50; /* Green Background */
+        }
+
+        .background-image {
+            background-image: url('https://cdn.britannica.com/42/91642-050-332E5C66/Keukenhof-Gardens-Lisse-Netherlands.jpg'); /* Image background */
+            background-size: cover; /* Make sure image covers the entire box */
+        }
+
+        .background-repeat {
+            background-image: url('https://cdn.britannica.com/42/91642-050-332E5C66/Keukenhof-Gardens-Lisse-Netherlands.jpg');
+            background-repeat: repeat; /* Repeats image both horizontally and vertically */
+        }
+
+        .background-position {
+            background-image: url('https://cdn.britannica.com/42/91642-050-332E5C66/Keukenhof-Gardens-Lisse-Netherlands.jpg');
+            background-position: center center; /* Centers the image */
+            background-size: contain;
+        }
+
+        .background-gradient {
+            background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient Background */
+        }
+
+        .background-attachment {
+            background-image: url('https://cdn.britannica.com/42/91642-050-332E5C66/Keukenhof-Gardens-Lisse-Netherlands.jpg');
+            background-attachment: fixed; /* Background image stays fixed during scrolling */
+            background-size: cover;
+        }
+
+        .background-all {
+            background: #ff6347 url('https://cdn.britannica.com/42/91642-050-332E5C66/Keukenhof-Gardens-Lisse-Netherlands.jpg') no-repeat center center/cover;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>CSS Background Properties</h1>
+
+    <div class="box background-color">
+        <h2>Background Color</h2>
+        <p>This box has a solid background color (green).</p>
+    </div>
+
+    <div class="box background-image">
+        <h2>Background Image</h2>
+        <p>This box has a background image. The image covers the entire box.</p>
+    </div>
+
+    <div class="box background-repeat">
+        <h2>Background Repeat</h2>
+        <p>This box has a repeated background image.</p>
+    </div>
+
+    <div class="box background-position">
+        <h2>Background Position</h2>
+        <p>This box centers the background image.</p>
+    </div>
+
+    <div class="box background-gradient">
+        <h2>Background Gradient</h2>
+        <p>This box has a linear gradient background that goes from pink to orange.</p>
+    </div>
+
+    <div class="box background-attachment">
+        <h2>Background Attachment</h2>
+        <p>This box has a fixed background image that stays in place while scrolling.</p>
+    </div>
+
+    <div class="box background-all">
+        <h2>Combined Background</h2>
+        <p>This box uses multiple background properties combined into one.</p>
+    </div>
+
+</body>
+</html>

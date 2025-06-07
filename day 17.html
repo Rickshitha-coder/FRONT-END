@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float and Overflow Properties</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* Float examples */
+    .float-container {
+      border: 2px solid #ccc;
+      padding: 10px;
+      margin-bottom: 40px;
+      overflow: hidden; /* clear the floats */
+    }
+
+    .float-box {
+      width: 45%;
+      padding: 20px;
+      margin: 10px;
+      color: white;
+    }
+
+    .left-box {
+      float: left;
+      background-color: #4caf50;
+    }
+
+    .right-box {
+      float: right;
+      background-color: #f44336;
+    }
+
+    .clearfix {
+      clear: both;
+    }
+
+    /* Overflow examples */
+    .overflow-section {
+      margin-top: 40px;
+    }
+
+    .overflow-box {
+      width: 300px;
+      height: 100px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 2px solid #333;
+      background-color: #f0f0f0;
+    }
+
+    .visible-box {
+      overflow: visible;
+    }
+
+    .hidden-box {
+      overflow: hidden;
+    }
+
+    .scroll-box {
+      overflow: scroll;
+    }
+
+    .auto-box {
+      overflow: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Float and Overflow Demo</h1>
+
+  <!-- Float Left and Right -->
+  <h2>Float Example</h2>
+  <div class="float-container">
+    <div class="float-box left-box">Float: Left</div>
+    <div class="float-box right-box">Float: Right</div>
+  </div>
+  <div class="clearfix"></div>
+
+  <!-- Overflow Examples -->
+  <h2>Overflow Examples</h2>
+  <div class="overflow-section">
+
+    <h3>overflow: visible (default)</h3>
+    <div class="overflow-box visible-box">
+      Content overflows this box and spills out visibly.
+      <p style="width: 500px;">This line is very wide and overflows the box container area.</p>
+    </div>
+
+    <h3>overflow: hidden</h3>
+    <div class="overflow-box hidden-box">
+      Content is clipped and hidden if it overflows.
+      <p style="width: 500px;">This line is very wide and will be cut off.</p>
+    </div>
+
+    <h3>overflow: scroll</h3>
+    <div class="overflow-box scroll-box">
+      Always shows scrollbars whether needed or not.
+      <p style="width: 500px;">Scrollbars appear even if the content fits inside the box.</p>
+    </div>
+
+    <h3>overflow: auto</h3>
+    <div class="overflow-box auto-box">
+      Scrollbars only appear if the content overflows.
+      <p style="width: 500px;">This will only show scrollbars if the content doesn't fit.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>

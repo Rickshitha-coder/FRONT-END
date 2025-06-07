@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>max-width and align Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto; /* center horizontally */
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center; /* center text */
+      color: #333;
+    }
+
+    p.left {
+      text-align: left;
+      color: #555;
+    }
+
+    p.center {
+      text-align: center;
+      color: #555;
+    }
+
+    p.right {
+      text-align: right;
+      color: #555;
+    }
+
+    .image-box {
+      max-width: 100%;
+      display: block;
+      margin: 20px auto; /* center image */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <h1>Welcome to My Page</h1>
+
+    <p class="left">This paragraph is aligned to the left.</p>
+    <p class="center">This paragraph is centered.</p>
+    <p class="right">This paragraph is aligned to the right.</p>
+
+    <img src="https://via.placeholder.com/600x200" alt="Sample Image" class="image-box">
+
+    <p class="center">This image is centered and uses <code>max-width</code> to stay responsive.</p>
+  </div>
+
+</body>
+</html>

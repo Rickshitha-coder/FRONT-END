@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Display Properties</title>
+    <style>
+        .box {
+            padding: 10px;
+            margin: 5px;
+            background-color: lightblue;
+            border: 1px solid #333;
+        }
+
+        /* Block Example */
+        .block-example {
+            display: block;
+            background-color: #ffd700;
+        }
+
+        /* Inline Example */
+        .inline-example {
+            display: inline;
+            background-color: #90ee90;
+        }
+
+        /* Inline-block Example */
+        .inline-block-example {
+            display: inline-block;
+            width: 100px;
+            background-color: #add8e6;
+        }
+
+        /* None Example */
+        .none-example {
+            display: none;
+        }
+
+        /* Flex Example */
+        .flex-container {
+            display: flex;
+            gap: 10px;
+            background-color: #f0f8ff;
+            padding: 10px;
+        }
+
+        .flex-item {
+            background-color: #ffa07a;
+            padding: 10px;
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Grid Example */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            background-color: #f5f5dc;
+            padding: 10px;
+        }
+
+        .grid-item {
+            background-color: #dda0dd;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>CSS Display Property Examples</h2>
+
+    <h3>1. Block (Takes full width)</h3>
+    <div class="box block-example">Block Element 1</div>
+    <div class="box block-example">Block Element 2</div>
+
+    <h3>2. Inline (Takes only necessary width)</h3>
+    <span class="box inline-example">Inline 1</span>
+    <span class="box inline-example">Inline 2</span>
+
+    <h3>3. Inline-block (Like inline, but can set width/height)</h3>
+    <div class="box inline-block-example">Inline-block 1</div>
+    <div class="box inline-block-example">Inline-block 2</div>
+
+    <h3>4. None (Hidden element)</h3>
+    <div class="box none-example">This is hidden (display: none)</div>
+
+    <h3>5. Flex (Flexible box layout)</h3>
+    <div class="flex-container">
+        <div class="flex-item">Flex 1</div>
+        <div class="flex-item">Flex 2</div>
+        <div class="flex-item">Flex 3</div>
+    </div>
+
+    <h3>6. Grid (2D grid layout)</h3>
+    <div class="grid-container">
+        <div class="grid-item">Grid 1</div>
+        <div class="grid-item">Grid 2</div>
+        <div class="grid-item">Grid 3</div>
+        <div class="grid-item">Grid 4</div>
+        <div class="grid-item">Grid 5</div>
+        <div class="grid-item">Grid 6</div>
+    </div>
+
+</body>
+</html>

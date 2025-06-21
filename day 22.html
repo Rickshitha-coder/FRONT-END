@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animation in Square Box</title>
+  <style>
+    
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: #f2f2f2;
+      border: 2px solid #000;
+      position: relative;
+      margin: 50px auto;
+      overflow: hidden;
+      box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.3);
+    }
+    .circle {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      animation: bounce 4s infinite ease-in-out;
+    }
+
+    /* Animation keyframes for movement and color change */
+    @keyframes bounce {
+      0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+      }
+      25% {
+        top: 0;
+        left: 250px;
+        background-color: blue;
+      }
+      50% {
+        top: 250px;
+        left: 250px;
+        background-color: green;
+      }
+      75% {
+        top: 250px;
+        left: 0;
+        background-color: yellow;
+      }
+      100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1 style="text-align:center;">CSS Animation in Square Box</h1>
+  <div class="box">
+    <div class="circle"></div>
+  </div>
+
+</body>
+</html>

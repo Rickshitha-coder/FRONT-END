@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Media Query Background Change</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      text-align: center;
+      font-size: 24px;
+      line-height: 100vh;
+      background-color: gray; /* Default */
+      color: white;
+      transition: background-color 0.5s ease;
+    }
+
+    /* Large screens (Desktop) */
+    @media (min-width: 1024px) {
+      body {
+        background-color: green;
+      }
+    }
+
+    /* Medium screens (Tablet) */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      body {
+        background-color: blue;
+      }
+    }
+
+    /* Small screens (Mobile) */
+    @media (max-width: 767px) {
+      body {
+        background-color: orange;
+      }
+    }
+  </style>
+</head>
+
+<body>
+ 
+  <p>Resize the window to change the background color</p> 
+</body>
+</html>

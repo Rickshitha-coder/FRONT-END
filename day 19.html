@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Responsive Layout with Grid, Flexbox & Media Query</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+
+    header, footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 1.5em;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .sidebar {
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .content {
+      background-color: #ffffff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #ecf0f1;
+      flex: 1 1 45%;
+      padding: 15px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Creative Space</h1>
+    <p>Learn Flexbox, Grid & Media Queries with a Live Example</p>
+  </header>
+
+  <div class="container">
+    <div class="sidebar">
+      <h2>About This Page</h2>
+      <p>This demo uses modern CSS layout techniques like Grid and Flexbox. Resize your screen to see how it adjusts!</p>
+      <p><strong>Topics covered:</strong></p>
+      <ul>
+        <li>Responsive Design</li>
+        <li>CSS Grid Layout</li>
+        <li>Flexbox for Components</li>
+        <li>Media Queries</li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <h2>Main Content Section</h2>
+      <p>Here are some cards with images. These are arranged using Flexbox inside a Grid layout. The cards stack on smaller screens for better viewing.</p>
+
+      <div class="cards">
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/beautiful-view-nature-mountains-near-konigssee-lake-bavaria-germany-blue-sky-clouds-97444419.jpg?w=768" alt="Nature">
+          <h3>Nature View</h3>
+          <p>Explore the beauty of nature with vibrant greenery and calm landscapes.</p>
+        </div>
+        <div class="card">
+          <img src="https://thumbs.dreamstime.com/b/beautiful-view-nature-mountains-near-konigssee-lake-bavaria-germany-blue-sky-clouds-97444419.jpg?w=768" alt="Tech">
+          <h3>Tech World</h3>
+          <p>Stay updated with the latest in gadgets, AI, and futuristic trends.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaxVXArs3ZPgABi9WToSt3i_nUKol3ntX9aw&s" alt="Food">
+          <h3>Delicious Bites</h3>
+          <p>Craving something tasty? Discover food from around the world.</p>
+        </div>
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSno1Aii-xDydU-yaeRWzIFvfekvjtEBzw56Q&s" alt="Travel">
+          <h3>Wanderlust</h3>
+          <p>Pack your bags! Adventures await in the world's most exotic destinations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 MyResponsiveSite.com | Made with ❤️ using HTML & CSS</p>
+  </footer>
+
+</body>
+</html>
